@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38446529-f9f5-4cac-baa0-dad1a3088146" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/opener.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_solver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_utils.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kakuroSolver.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/Kakuro.py" afterPath="$PROJECT_DIR$/modules/kakuro.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/utils/Block.py" afterPath="$PROJECT_DIR$/modules/utils/block.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/utils/Cell.py" afterPath="$PROJECT_DIR$/modules/utils/cell.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/utils/Location.py" afterPath="$PROJECT_DIR$/modules/utils/location.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/parser.py" afterPath="$PROJECT_DIR$/modules/parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,12 +29,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kakuro.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kakuro.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/kakuro.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
               <caret line="33" column="62" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="62" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -133,7 +134,6 @@
         <option value="$PROJECT_DIR$/modules/utils/Cell.py" />
         <option value="$PROJECT_DIR$/modules/utils/Location.py" />
         <option value="$PROJECT_DIR$/modules/fields/2" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/modules/fields/3" />
         <option value="$PROJECT_DIR$/modules/Main.py" />
         <option value="$PROJECT_DIR$/Main.py" />
@@ -150,6 +150,7 @@
         <option value="$PROJECT_DIR$/modules/utils/cell.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/modules/kakuro.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -621,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/argparse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -762,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/utils/block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/utils/cell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -790,11 +773,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/utils/block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/kakuro.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="33" column="62" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

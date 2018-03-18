@@ -1,4 +1,4 @@
 
 .idea/
-modules/__pycache__
-mudules/utils/__pycache__
+tests/**/__pycache__
+mudules/**/__pycache__
