@@ -23,6 +23,7 @@ class Location:
         if isinstance(other, Location):
             return self.x == other.x and self.y == other.y
 
+    @staticmethod
     def parse(sep, line):
         coordinate = line.split(sep)
         return Location(int(coordinate[0]), int(coordinate[1]))
