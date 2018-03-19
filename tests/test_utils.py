@@ -15,21 +15,18 @@ class LocationTest(unittest.TestCase):
 class BlockTest(unittest.TestCase):
     def setUp(self):
         self.block = Block(Location(0, 1), 12, 4, True)
-        self.block.append_cell(Cell(True, 12, Location(0, 1)))
+        location = Location(0, 1)
+        self.block[location] = Cell(True, 12, location)
 
-    def test_initial_block(self):
-        self.assertSequenceEqual([None, None, None], self.block.value_cells)
-
-    def test_append_cell(self):
-        cell = Cell(False, 2, Location(0, 2))
-        self.block.append_cell(cell)
-        self.assertSequenceEqual([cell, None, None], self.block.value_cells)
+    # def test_initial_block(self):
+    #     self.assertSequenceEqual([None, None, None], self.block.value_cells)
 
     def test_get_known_values(self):
-        self.block.append_cell(Cell(False, 2, Location(0, 2)))
-        self.block.append_cell(Cell(False, 4, Location(0, 3)))
-        self.block.append_cell(Cell(False, 6, Location(0, 4)))
-        self.assertSequenceEqual([2, 4, 6], self.block.get_known_values())
+        locations =[Location(0, 2), Location(0, 3), Location(0, 4)]
+        values = [2, 4, 6]
+        for i in range(len(values)):
+            self.block[locations[i]] = Cell(False, values[i], locations[i])
+        self.assertSequenceEqual(values, self.block.get_known_values())
 
 
 if __name__ == "__main__":

@@ -23,6 +23,14 @@ class Location:
         if isinstance(other, Location):
             return self.x == other.x and self.y == other.y
 
+    def distance_on_line(self, other):
+        if not isinstance(other, Location):
+            raise ValueError('it is not Location')
+        location = Location(other.x - self.x, other.y - self.y)
+        if location.x == 0 or location.y == 0:
+            return location.x if location.y == 0 else location.y
+        raise ValueError('locations are not on the same line')
+
     @staticmethod
     def parse(sep, line):
         coordinate = line.split(sep)

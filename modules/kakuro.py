@@ -12,27 +12,32 @@ class Kakuro:
         self.blocks = blocks
         for block in self.blocks:
             location = block.location
-            for cell in block:
-                is_service_block, values_block = Kakuro._get_content(block, location, cell)
+            for i in range(len(block)):
+                cell = block[location]
+                if cell is not None:
+                    continue
+                is_service, values = Kakuro._get_content(block, location)
                 adjacent_block = self.find_adjacent_block(block, location)
                 if adjacent_block is not None:
-                    is_service_ab, values_ab = Kakuro._get_content(adjacent_block, location, cell)
-                    if not (is_service_block ^ is_service_ab):
-                        new_cell = Cell(is_service_ab, values_block + values_ab, location)
+                    is_service_abj, values_adj = Kakuro._get_content(adjacent_block, location, cell)
+                    if not (is_service ^ is_service_abj):
+                        new_cell = Cell(is_service, values + values_adj, location)
                     else:
                         raise ValueError("Something went wrong")
-                    adjacent_block.append_cell(new_cell)
+                    adjacent_block[location] = new_cell
                 else:
-                    new_cell = Cell(is_service_block, values_block, location)
-                block.append_cell(new_cell)
+                    new_cell = Cell(is_service, values, location)
+                block[location] = new_cell
                 location = location + (Location(1, 0) if block.is_horizontal else Location(0, 1))
 
     def find_adjacent_block(self, block, location):
         for adjacent_block in self.blocks:
+            if adjacent_block == block or block.is_horizontal == adjacent_block.is_horizontal:
+                continue
             current_location = location
             while current_location.x >= 0 and current_location.y >= 0:
-                if adjacent_block.location == current_location and adjacent_block != block:
-                    if current_location == location:
+                if adjacent_block.location == current_location:
+                    if current_location.distance_on_line(location) < len(adjacent_block):
                         return adjacent_block
                 current_location = current_location + Location(-1, 0) if not block.is_horizontal else Location(0, -1)
 
@@ -40,7 +45,7 @@ class Kakuro:
         return [(self.find_adjacent_block(block, cell.location), cell) for cell in block.value_cells]
 
     @staticmethod
-    def _get_content(block, location, cell):
+    def _get_content(block, location, cell=None):
         if location == block.location:
             is_service = True
             values = [block.sum]
@@ -76,3 +81,6 @@ class Kakuro:
         for line in field:
             lines.append('|'.join([x.center(Kakuro.CELL_WIDTH) for x in line]))
         return '\n'.join(lines)
+
+    def print(self, name):
+        print('\n'.join([name + ':', '', str(self), '']))

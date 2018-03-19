@@ -3,7 +3,7 @@ import sys
 
 from modules.opener import Opener
 from modules.parser import Parser
-from solver import Solver
+from modules.solver import Solver
 
 
 def parsing_arguments():
@@ -46,19 +46,13 @@ if __name__ == "__main__":
         raw_kakuro = Opener.open_file(args.name)
     else:
         raw_kakuro = []
-        while(True):
+        while True:
             line = ''.join(sys.stdin.readline())
             if line.rstrip('\n') == 'end':
                 break
             raw_kakuro.append(line)
 
     kakuro = Parser.parse(raw_kakuro)
-    print(kakuro)
-    print()
-    print(kakuro.blocks[0].value_cells[0])
-    kakuro.blocks[0].value_cells[0].append_value(3)
-    print(kakuro.blocks[0].value_cells[0])
-
-    print(kakuro.blocks[3].value_cells[0])
-    # solution = Solver.solve(kakuro, args.count)
-    # print(kakuro)
+    # kakuro.print('Kakuro')
+    Solver.solve(kakuro, args.count)
+    kakuro.print('Solution')

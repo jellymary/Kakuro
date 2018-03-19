@@ -4,12 +4,14 @@ class Solver:
         for block in kakuro.blocks:
             partitions = Solver.get_block_partitions(block)
             if len(partitions) == 1:
+                partitions = partitions[0]
                 for adjacent_block, cell in kakuro.find_all_adjacents_blocks(block):
                     adj_partitions = Solver.get_block_partitions(adjacent_block)
                     if len(adj_partitions) == 1:
+                        adj_partitions = adj_partitions[0]
                         intersection = list(set(partitions) & set(adj_partitions))
                         if len(intersection) != 1:
-                            raise ValueError("Oh!.. no")
+                            raise ValueError('Oh no!... something went wrong')
                         cell.values = intersection
                         partitions = Solver.get_block_partitions(block)
 

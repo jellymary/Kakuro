@@ -1,6 +1,6 @@
 import unittest
 
-from solver import Solver
+from modules.solver import Solver
 from modules.utils.block import Block
 from modules.utils.location import Location
 
@@ -14,23 +14,23 @@ class SolverTest(unittest.TestCase):
 
     def test_get_partitions(self):
         test_partitions = {
-            (3, 2): ['21'],
-            (7, 2): ['43', '52', '61'],
-            # (16, 3): ['745', '763'],
-            (26, 5): ['86543', '87542', '87632', '87641',
-                      '96542', '97532', '97541', '97631', '98432', '98531', '98621'],
-            (28, 7): ['7654321'],
-            (45, 9): ['987654321'],
-
-            (31, 10): [],
-            (21, 2): [],
-
-            (14, 2, 6): ['86'],
-            (9, 3, 4, 1): []
+            # (3, 2): ['21'],
+            # (7, 2): ['43', '52', '61'],
+            # (26, 5): ['86543', '87542', '87632', '87641',
+            #           '96542', '97532', '97541', '97631', '98432', '98531', '98621'],
+            # (28, 7): ['7654321'],
+            # (45, 9): ['987654321'],
+            #
+            # (31, 10): [],
+            # (21, 2): [],
+            #
+            # (14, 2, 6): ['86'],
+            # (9, 3, 4, 1): [],
+            (16, 2, 9): ['97']
         }
-        for sum_and_count, expected in test_partitions.items():
-            with self.subTest(sum_and_count=sum_and_count):
-                actual = Solver.get_partitions(*sum_and_count)
+        for parameters, expected in test_partitions.items():
+            with self.subTest(sum_and_count=parameters):
+                actual = Solver.get_partitions(*parameters)
                 actual.sort()
                 self.assertSequenceEqual(expected, actual)
 
