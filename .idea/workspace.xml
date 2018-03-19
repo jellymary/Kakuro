@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38446529-f9f5-4cac-baa0-dad1a3088146" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/fields/4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_kakuro.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solver.py" afterPath="$PROJECT_DIR$/modules/solver.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/kakuro.py" afterPath="$PROJECT_DIR$/modules/kakuro.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/opener.py" afterPath="$PROJECT_DIR$/modules/opener.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/parser.py" afterPath="$PROJECT_DIR$/modules/parser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/utils/block.py" afterPath="$PROJECT_DIR$/modules/utils/block.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/utils/location.py" afterPath="$PROJECT_DIR$/modules/utils/location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_solver.py" afterPath="$PROJECT_DIR$/tests/test_solver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_utils.py" afterPath="$PROJECT_DIR$/tests/test_utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,40 +13,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="kakuro.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/kakuro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="-813">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#2162#2404#0" expanded="false" />
+                <element signature="e#2163#2405#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="solver.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="solver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#2287#2670#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="2040">
+              <caret line="120" column="28" lean-forward="true" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,12 +69,12 @@
       <find>set_cell</find>
       <find>._</find>
       <find>_cells</find>
-      <find>known_cells</find>
       <find>cells</find>
       <find>get_field</find>
       <find>Cell</find>
       <find>append_cell</find>
       <find>size</find>
+      <find>known_cells</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,19 +100,19 @@
         <option value="$PROJECT_DIR$/tests/test_parser.py" />
         <option value="$PROJECT_DIR$/kakuroSolver.py" />
         <option value="$PROJECT_DIR$/solver.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/modules/utils/cell.py" />
         <option value="$PROJECT_DIR$/modules/utils/location.py" />
         <option value="$PROJECT_DIR$/tests/test_utils.py" />
         <option value="$PROJECT_DIR$/tests/test_kakuro.py" />
         <option value="$PROJECT_DIR$/modules/opener.py" />
-        <option value="$PROJECT_DIR$/modules/solver.py" />
         <option value="$PROJECT_DIR$/modules/fields/4" />
-        <option value="$PROJECT_DIR$/tests/test_solver.py" />
-        <option value="$PROJECT_DIR$/modules/kakuro.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/modules/parser.py" />
         <option value="$PROJECT_DIR$/modules/utils/block.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/modules/utils/cell.py" />
+        <option value="$PROJECT_DIR$/modules/kakuro.py" />
+        <option value="$PROJECT_DIR$/tests/test_solver.py" />
+        <option value="$PROJECT_DIR$/modules/solver.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -309,53 +295,74 @@
       <option name="presentableId" value="Default" />
       <updated>1513884225205</updated>
     </task>
+    <task id="LOCAL-00001" summary="read">
+      <created>1521454770194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521454770195</updated>
+    </task>
+    <task id="LOCAL-00002" summary="simple solver">
+      <created>1521461041374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521461041374</updated>
+    </task>
+    <task id="LOCAL-00003" summary="code that does not do anything">
+      <created>1521485580712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521485580712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 23m 07s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 23m 21s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 26m 58s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 27m 08s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 27m 32s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 28m 45s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 28m 56s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 00h 29m 12s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 02h 21m 20s.xml">
-      <configuration name="Unittests in test_solver.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 02h 22m 37s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 22m 15s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 22m 40s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 29m 50s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 33m 04s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 33m 30s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 37m 21s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 39m 10s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 40m 32s.xml">
+      <configuration name="Unittests in test_solver.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_solver_py - 2018.03.19 at 20h 41m 07s.xml">
       <configuration name="Unittests in test_solver.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17700455" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11764706" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41008404" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.96638656" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5546219" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36806723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3042017" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43529412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -367,8 +374,40 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="read" />
+    <MESSAGE value="simple solver" />
+    <MESSAGE value="code that does not do anything" />
+    <option name="LAST_COMMIT_MESSAGE" value="code that does not do anything" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -379,34 +418,21 @@
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_solver.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/modules/solver.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="92" />
+          <line>21</line>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="94" />
+      <option name="time" value="118" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="self._blocks[4]" />
-        <watch expression="values_block" />
-        <watch expression="kakuro.blocks[2]" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/modules/solver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding>
-            <element signature="e#2287#2670#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -416,7 +442,7 @@
           <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -427,7 +453,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
+            <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
           </folding>
         </state>
       </provider>
@@ -436,9 +462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding>
-            <element signature="e#2287#2670#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,7 +472,7 @@
           <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -459,7 +483,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
+            <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
           </folding>
         </state>
       </provider>
@@ -477,7 +501,7 @@
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -488,7 +512,7 @@
           <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
+            <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
           </folding>
         </state>
       </provider>
@@ -506,7 +530,7 @@
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -517,7 +541,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
+            <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
           </folding>
         </state>
       </provider>
@@ -542,7 +566,7 @@
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,7 +619,7 @@
           <caret line="11" column="88" lean-forward="false" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="88" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
+            <element signature="e#2163#2405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,25 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,33 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1521408461255" expanded="true" signature="1827:1859" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/utils/cell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/utils/block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/utils/location.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -804,21 +782,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/kakuro.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/utils/block.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2162#2404#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/utils/cell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -827,10 +829,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="2040">
+          <caret line="120" column="28" lean-forward="true" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/kakuro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-813">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="e#2287#2670#0" expanded="false" />
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#2163#2405#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1521485515151" expanded="true" signature="1485:1517" ph="..." />
           </folding>
         </state>
       </provider>
