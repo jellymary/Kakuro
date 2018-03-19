@@ -1,31 +1,60 @@
-from copy import copy
-
-
 class Solver:
     @staticmethod
     def solve(kakuro, solutions_count):
-        for block in kakuro.blocks:
-            partitions = Solver.get_block_partitions(block)
-            if len(partitions) == 1:
-                partitions = partitions[0]
-                for adjacent_block, cell in kakuro.find_all_adjacents_blocks(block):
-                    if adjacent_block is not None:
-                        adj_partitions = Solver.get_block_partitions(adjacent_block)
-                        if len(adj_partitions) == 1:
-                            adj_partitions = adj_partitions[0]
-                            intersection = list(set(partitions) & set(adj_partitions))
-                            if len(intersection) == 1:
-                                # raise ValueError('Oh no!... something went wrong')
-                                cell.values = int(intersection[0])
-                Solver._add_residue(partitions, block)
+        for i in range(10):
+            for block in kakuro.blocks:
+                partitions = Solver.get_block_partitions(block)
+                if len(partitions) == 1:
+                    partitions = partitions[0]
+                    for cell in block.value_cells:
+                        if len(cell.values) == 0:
+                            Solver.assign(kakuro, cell, list(partitions))
+                        else:
+                            intersection = Solver._get_intersection(cell.values, partitions)
+                            if len(intersection) == 0:
+                                raise ValueError('kakuro does not have a solution')
+                            Solver.assign(kakuro, cell, intersection)
+                else:
+                    Solver.update(block, kakuro)
 
     @staticmethod
-    def _add_residue(partitions, block):
-        difference = Solver._get_difference(partitions, block.get_known_values())
-        if len(difference) == 1:
-            for cell in block.value_cells:
-                if len(cell.values) == 0:
-                    cell.values = difference[0]
+    def assign(kakuro, current_cell, value):
+        current_cell.values = value
+        if len(value) == 1:
+            for block in kakuro.blocks:
+                if current_cell not in block.value_cells:
+                    continue
+                Solver.update(block, kakuro)
+
+    @staticmethod
+    def update(block, kakuro):
+        partitions = Solver.get_block_partitions(block)
+        empty_cell = []
+        full_cell = []
+        for current_cell in block.value_cells:
+            if len(current_cell.values) != 0:
+                partitions = Solver._get_intersection(current_cell.values, partitions)
+                full_cell.append(current_cell)
+            else:
+                empty_cell.append(current_cell)
+        if len(partitions) == 1:
+            inter = Solver._get_intersection(partitions, full_cell[0].values)[0]
+            if len(full_cell) == 1:
+                # full_cell[0].values = inter
+                Solver.assign(kakuro, full_cell[0], inter)
+                for empty in empty_cell:
+                    empty.values = [digit for digit in partitions[0] if digit != inter]
+            # if len(empty_cell) == 1:
+            #     empty_cell[0].values = inter
+
+
+    @staticmethod
+    def _get_intersection(partitions, adj_partitions):
+        return [adj_parts
+                for adj_parts in adj_partitions
+                for parts in partitions
+                for digit in parts
+                if digit in adj_parts]
 
     @staticmethod
     def _get_difference(partitions, known_values):
@@ -36,6 +65,14 @@ class Solver:
             if value in diff:
                 diff.remove(value)
         return diff
+
+    @staticmethod
+    def _add_residue(partitions, block):
+        difference = Solver._get_difference(partitions, block.get_known_values())
+        if difference is not None and len(difference) == 1:
+            for cell in block.value_cells:
+                if len(cell.values) == 0:
+                    cell.values = difference[0]
 
     @staticmethod
     def get_block_partitions(block):

@@ -3,7 +3,7 @@ from modules.utils.location import Location
 
 
 class Kakuro:
-    CELL_WIDTH = 7
+    CELL_WIDTH = 11
     SEP = ':'
     EMPTY_BLOCK = SEP * CELL_WIDTH
 
@@ -83,4 +83,4 @@ class Kakuro:
         return '\n'.join(lines)
 
     def print(self, name):
-        print('\n'.join([name + ':', '', str(self), '']))
+        print('\n'.join([str(name) + ':', '', str(self), '']))
