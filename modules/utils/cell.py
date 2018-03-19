@@ -22,6 +22,8 @@ class Cell:
 
     @values.setter
     def values(self, value):
+        if isinstance(value, int):
+            value = [value]
         self._values = value
 
     @property

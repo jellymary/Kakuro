@@ -1,3 +1,6 @@
+from copy import copy
+
+
 class Solver:
     @staticmethod
     def solve(kakuro, solutions_count):
@@ -6,14 +9,33 @@ class Solver:
             if len(partitions) == 1:
                 partitions = partitions[0]
                 for adjacent_block, cell in kakuro.find_all_adjacents_blocks(block):
-                    adj_partitions = Solver.get_block_partitions(adjacent_block)
-                    if len(adj_partitions) == 1:
-                        adj_partitions = adj_partitions[0]
-                        intersection = list(set(partitions) & set(adj_partitions))
-                        if len(intersection) != 1:
-                            raise ValueError('Oh no!... something went wrong')
-                        cell.values = intersection
-                        partitions = Solver.get_block_partitions(block)
+                    if adjacent_block is not None:
+                        adj_partitions = Solver.get_block_partitions(adjacent_block)
+                        if len(adj_partitions) == 1:
+                            adj_partitions = adj_partitions[0]
+                            intersection = list(set(partitions) & set(adj_partitions))
+                            if len(intersection) == 1:
+                                # raise ValueError('Oh no!... something went wrong')
+                                cell.values = int(intersection[0])
+                Solver._add_residue(partitions, block)
+
+    @staticmethod
+    def _add_residue(partitions, block):
+        difference = Solver._get_difference(partitions, block.get_known_values())
+        if len(difference) == 1:
+            for cell in block.value_cells:
+                if len(cell.values) == 0:
+                    cell.values = difference[0]
+
+    @staticmethod
+    def _get_difference(partitions, known_values):
+        if not isinstance(partitions, str):
+            raise ValueError()
+        diff = [int(x) for x in partitions]
+        for value in known_values:
+            if value in diff:
+                diff.remove(value)
+        return diff
 
     @staticmethod
     def get_block_partitions(block):
@@ -22,9 +44,9 @@ class Solver:
     @staticmethod
     def get_partitions(number, count, *known_cells):
         partitions = []
-        parts = [1 for x in range(count)]
+        parts = [1 for i in range(count)]
         parts[0] = number - count + 1
-        while (True):
+        while True:
             Solver._append(parts, partitions, known_cells)
             while parts[1] < parts[0] - 1:
                 parts[0] -= 1
